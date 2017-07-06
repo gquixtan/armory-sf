@@ -66,6 +66,25 @@
 			    <li>In June of 2017, the Armory opened its doors to host Techtonica, a non-profit that works to "bridge the tech gap" by offering free tech training, living/childcare stipends, and job placement to local women & non-binary femme adults with low incomes.</li>
 			</ul>
 		</div>
+		<div id="map"></div>
+
+			<script>
+		      function initMap() {
+		        var uluru = {lat: 37.767741, lng:  -122.420586};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 18,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		      }
+		    </script>
+
+			<script async defer
+			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAEqpq2RTWEo3uyOAbFiX7h0VcHPflnQ&callback=initMap">
+			</script>
 
 		<!-- This div contains a link to wikipedia. -->
 		 <div class="info">
